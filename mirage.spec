@@ -1,13 +1,13 @@
 Summary:	A fast and simple image viewer
 Name:		mirage
 Version:	0.8.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		Graphics
 License:	GPLv2+
 URL:		http://mirageiv.berlios.de/
 Source0:	http://download.berlios.de/mirageiv/%{name}-%{version}.tar.bz2
 BuildRequires:	python-devel
-Requires:	pygtk2
+Requires:	pygtk2.0
 Requires:	gnome-python-gconf
 %py_requires -d
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
