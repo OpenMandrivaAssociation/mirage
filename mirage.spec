@@ -1,7 +1,7 @@
 Summary:	A fast and simple image viewer
 Name:		mirage
 Version:	0.8.3
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		Graphics
 License:	GPLv2+
 URL:		http://mirageiv.berlios.de/
@@ -33,6 +33,11 @@ python setup.py install --skip-build --root %{buildroot}
 
 # remove document files
 rm -f %{buildroot}%{_datadir}/%{name}/[A-Z]*
+
+desktop-file-install \
+	--remove-category="Application" \
+	--add-category="Viewer" \
+	--dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 %find_lang %{name}
 
