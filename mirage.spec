@@ -20,7 +20,7 @@ keep their computers lean while still having a clean image viewer.
 
 %prep
 %setup -q
-sed -i.0.13 -e '/^Version=/d' mirage.desktop
+sed -i -e 's/^Icon=%{name}.png$/Icon=%{name}/g' %{name}.desktop
 
 %build
 export CFLAGS="%{optflags}"
