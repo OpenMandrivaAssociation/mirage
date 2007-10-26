@@ -38,6 +38,7 @@ rm -f %{buildroot}%{_datadir}/%{name}/[A-Z]*
 desktop-file-install \
 	--remove-category="Application" \
 	--add-category="Viewer" \
+	--remove-key="Version" \
 	--dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 %find_lang %{name}
