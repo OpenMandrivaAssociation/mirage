@@ -23,14 +23,13 @@ keep their computers lean while still having a clean image viewer.
 sed -i -e 's/^Icon=%{name}.png$/Icon=%{name}/g' %{name}.desktop
 
 %build
-export CFLAGS="%{optflags}"
-python setup.py build
+env CFLAGS="%{optflags}" python setup.py build
 
 %install
 rm -rf %{buildroot}
 
 mkdir -p %{buildroot}
-python setup.py install --skip-build --root %{buildroot}
+python setup.py install --root=%{buildroot} --record=INSTALLED_FILES
 
 # remove document files
 rm -f %{buildroot}%{_datadir}/%{name}/[A-Z]*
