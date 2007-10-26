@@ -7,6 +7,7 @@ License:	GPLv2+
 URL:		http://mirageiv.berlios.de/
 Source0:	http://download.berlios.de/mirageiv/%{name}-%{version}.tar.bz2
 BuildRequires:	python-devel
+BuildRequires:	desktop-file-utils
 Requires:	pygtk2.0
 Requires:	gnome-python-gconf
 %py_requires -d
