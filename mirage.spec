@@ -11,6 +11,7 @@ BuildRequires:	desktop-file-utils
 Requires:	pygtk2.0
 Requires:	gnome-python-gconf
 %py_requires -d
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Mirage is a fast and simple GTK+ image viewer. Because it 
