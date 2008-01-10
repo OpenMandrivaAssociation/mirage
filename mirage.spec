@@ -1,7 +1,7 @@
 Summary:	A fast and simple image viewer
 Name:		mirage
-Version:	0.9
-Release:	%mkrel 2
+Version:	0.9.1
+Release:	%mkrel 1
 Group:		Graphics
 License:	GPLv2+
 URL:		http://mirageiv.berlios.de/
@@ -55,7 +55,7 @@ rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
-%doc CHANGELOG COPYING README TODO TRANSLATORS
+%doc CHANGELOG README TODO TRANSLATORS
 %{_bindir}/%{name}
 %{python_sitearch}/%{name}.py*
 %{python_sitearch}/*.egg-info
