@@ -1,7 +1,7 @@
 Summary:	A fast and simple image viewer
 Name:		mirage
 Version:	0.9.3
-Release:	%mkrel 2
+Release:	%mkrel 3
 Group:		Graphics
 License:	GPLv2+
 URL:		http://mirageiv.berlios.de/
