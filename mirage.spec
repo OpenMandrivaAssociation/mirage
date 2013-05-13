@@ -1,7 +1,7 @@
 Summary:	A fast and simple image viewer
 Name:		mirage
 Version:	0.9.5.2
-Release:	%mkrel 1
+Release:	2
 Group:		Graphics
 License:	GPLv2+
 URL:		http://mirageiv.berlios.de/
@@ -11,7 +11,6 @@ BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(x11)
 Requires:	pygtk2.0
 Requires:	gnome-python-gconf
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Mirage is a fast and simple GTK+ image viewer. Because it 
