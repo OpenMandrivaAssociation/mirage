@@ -60,9 +60,9 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc CHANGELOG README TODO TRANSLATORS
 %{_bindir}/%{name}
-%{python_sitearch}/%{name}.py*
-%{python_sitearch}/*.egg-info
-%{python_sitearch}/*.so
+%{python2_sitearch}/%{name}.py*
+%{python2_sitearch}/*.egg-info
+%{python2_sitearch}/*.so
 %{_datadir}/%{name}/
 %{_datadir}/pixmaps/*.png
 %{_datadir}/applications/*%{name}.desktop
