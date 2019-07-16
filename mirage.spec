@@ -1,12 +1,12 @@
 Summary:	A fast and simple image viewer
 Name:		mirage
 Version:	0.9.5.2
-Release:	3
+Release:	4
 Group:		Graphics
 License:	GPLv2+
 URL:		http://mirageiv.berlios.de/
 Source0:	http://download.berlios.de/mirageiv/%{name}-%{version}.tar.bz2
-BuildRequires:	python-devel
+BuildRequires:	python2-devel
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(x11)
 Requires:	pygtk2.0
