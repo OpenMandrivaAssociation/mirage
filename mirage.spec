@@ -4,7 +4,7 @@ Version:	0.9.5.2
 Release:	4
 Group:		Graphics
 License:	GPLv2+
-URL:		http://mirageiv.berlios.de/
+URL:		https://mirageiv.berlios.de/
 Source0:	http://download.berlios.de/mirageiv/%{name}-%{version}.tar.bz2
 BuildRequires:	python2-devel
 BuildRequires:	desktop-file-utils
